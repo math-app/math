@@ -44,10 +44,6 @@ server {
 		try_files $uri @wsgi;
 	}
 
-	location /static/ {
-		root /static;
-	}
-
 	location @wsgi {
 		include uwsgi_params;
 		uwsgi_pass 127.0.0.1:3031; #that is the address of the uwsgi sofcket
