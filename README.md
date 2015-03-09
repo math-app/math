@@ -31,7 +31,7 @@ apt-get install nginx
 
 ## Configuration
 
-NGinx
+### NGinx
 You can put the math configuration on a custom file in `/etc/nginx/sites-available`, and create a link to `/etc/nginx/sites-enabled`. But don't forget to remove the `/etc/nginx/sites-enabled/default`, because there are configuration to root. I put the configuration in the default file.
 
 ```
