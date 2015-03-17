@@ -1,6 +1,6 @@
 # Install
 
-To run the app, install the needed softs:
+To run the app, install the required softs:
 
 Python
 ```
