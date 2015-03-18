@@ -1,13 +1,13 @@
 from bottle import template
-from common.decorator import route
+from configuration import app
 
 
 class Router():
 
-    @route('/')
+    @app.route('/')
     def index():
         return template('index', name="to home")
 
-    @route('/hello/<name>')
+    @app.route('/hello/<name>')
     def hello(name='Stranger'):
         return template('index', name=name)
