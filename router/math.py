@@ -8,6 +8,7 @@ class Router():
     def index():
         return template('index', name="to home")
 
+    @app.route('/hello')
     @app.route('/hello/<name>')
     def hello(name='Stranger'):
         return template('index', name=name)
